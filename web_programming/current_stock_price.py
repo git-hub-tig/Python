@@ -16,5 +16,5 @@ def stock_price(symbol: str = "AAPL") -> str:
 
 # Search for the symbol at https://finance.yahoo.com/lookup
 if __name__ == "__main__":
-    for symbol in "AAPL AMZN IBM GOOG MSFT ORCL".split():
+    for symbol in "NVDA AAPL AMZN IBM GOOG MSFT".split():
         print(f"Current {symbol:<4} stock price is {stock_price(symbol):>8}")

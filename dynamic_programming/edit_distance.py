@@ -87,6 +87,31 @@ class EditDistance:
         return self.dp[m][n]
 
 
+# Open and read the file
+with open("in.txt", "r") as file:
+    file_content = file.read()
+
+# Redirect the contents of the file as input for the input() function
+original_input = input
+
+
+def file_input(prompt=""):
+    global file_content
+    if file_content:
+        line = file_content.split("\n", 1)[0]
+        file_content = file_content[len(line) + 1 :]
+        return line
+    else:
+        return original_input(prompt)
+
+
+# Replace input() with file_input()
+input = file_input
+
+# # Now you can use input() as usual and it will read from the file
+# user_input = input('Enter something: ')
+# print('You entered:', user_input)
+
 if __name__ == "__main__":
     solver = EditDistance()
 
@@ -94,7 +119,9 @@ if __name__ == "__main__":
     print()
 
     S1 = input("Enter the first string: ").strip()
+    print(S1)
     S2 = input("Enter the second string: ").strip()
+    print(S2)
 
     print()
     print(f"The minimum edit distance is: {solver.min_dist_top_down(S1, S2)}")
