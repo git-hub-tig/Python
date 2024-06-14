@@ -19,8 +19,10 @@ def solution():
     >>> solution()
     '2783915460'
     """
-    result = list(map("".join, permutations("0123456789")))
-    return result[999999]
+    result = list(map("".join, permutations("601")))
+    # result = list(map("".join, permutations("6012345789")))
+    # return result[999999]
+    return result
 
 
 if __name__ == "__main__":

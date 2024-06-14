@@ -49,11 +49,11 @@ def minimum_subarray_sum(target: int, numbers: list[int]) -> int:
         raise ValueError("numbers must be an iterable of integers")
 
     left = right = curr_sum = 0
-    min_len = sys.maxsize
+    min_len = sys.maxsize # wqs 9223372036854775807
 
     while right < len(numbers):
         curr_sum += numbers[right]
-        while curr_sum >= target and left <= right:
+        while curr_sum >= target and left <= right: # wqs, two pointer
             min_len = min(min_len, right - left + 1)
             curr_sum -= numbers[left]
             left += 1
