@@ -40,8 +40,9 @@ def largest_divisible_subset(items: list[int]) -> list[int]:
             if ((items[prev_index] != 0 and item % items[prev_index]) == 0) and (
                 (1 + memo[prev_index]) > memo[i]
             ):
-                memo[i] = 1 + memo[prev_index]
-                hash_array[i] = prev_index
+                # The longer increasing arr
+                memo[i] = 1 + memo[prev_index]  #  the length of increasing arr
+                hash_array[i] = prev_index  # the location of element of increasing arr
 
     ans = -1
     last_index = -1
@@ -60,6 +61,7 @@ def largest_divisible_subset(items: list[int]) -> list[int]:
         last_index = hash_array[last_index]
         result.append(items[last_index])
 
+    # print(f"ans is {ans}")
     return result
 
 

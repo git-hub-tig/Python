@@ -1,3 +1,8 @@
+# https://zhenye-na.github.io/leetcode/gray-code.html#:~:text=An%20n-bit%20gray%20code%20sequence%20is%20a%20sequence,adjacent%20integers%20differs%20by%20exactly%20one%20bit%2C%20and
+"""
+Time Complexity:
+1 + 2 + 4 + 8 + ….. + 2^n = 2^n - 1
+"""
 def gray_code(bit_count: int) -> list:
     """
     Takes in an integer n and returns a n-bit
