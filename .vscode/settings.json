@@ -1,5 +1,12 @@
 {
     "githubPullRequests.ignoredPullRequestBranches": [
         "master"
-    ]
+    ],
+    "files.associations": {
+        "*.embeddedhtml": "html",
+        "vector": "cpp",
+        "iostream": "cpp",
+        "__bit_reference": "cpp",
+        "unordered_map": "cpp"
+    }
 }

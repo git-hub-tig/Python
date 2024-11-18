@@ -8,11 +8,13 @@ def minimum_cost_path(matrix: list[list[int]]) -> int:
     Find the minimum cost traced by all possible paths from top left to bottom right in
     a given matrix
 
-    >>> minimum_cost_path([[2, 1], [3, 1], [4, 2]])
+    >>> minimum_cost_path([[2, 1], [3, 1],    [4, 2]])
     6
 
     >>> minimum_cost_path([[2, 1, 4], [2, 1, 3], [3, 2, 1]])
     7
+
+    8
     """
 
     # preprocessing the first row

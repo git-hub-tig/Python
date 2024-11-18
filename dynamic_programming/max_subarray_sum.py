@@ -43,7 +43,7 @@ def max_subarray_sum(
     if not arr:
         return 0
 
-    max_sum = 0 if allow_empty_subarrays else float("-inf")
+    max_sum = 0 if allow_empty_subarrays else float("-inf") # wqs, the INT_MAX
     curr_sum = 0.0
     for num in arr:
         curr_sum = max(
