@@ -4,7 +4,8 @@ from random import randrange, shuffle
 
 import pytest
 
-from .sol1 import PokerHand
+from .sol1
+import PokerHand
 
 SORTED_HANDS = (
     "4S 3H 2C 7S 5H",
