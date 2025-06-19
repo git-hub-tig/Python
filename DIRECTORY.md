@@ -403,6 +403,7 @@
   * [Smith Waterman](dynamic_programming/smith_waterman.py)
   * [Subset Generation](dynamic_programming/subset_generation.py)
   * [Sum Of Subset](dynamic_programming/sum_of_subset.py)
+  * [Templofcrksy](dynamic_programming/templofcrksy.py)
   * [Trapped Water](dynamic_programming/trapped_water.py)
   * [Tribonacci](dynamic_programming/tribonacci.py)
   * [Viterbi](dynamic_programming/viterbi.py)
@@ -443,6 +444,7 @@
   * [Present Value](financial/present_value.py)
   * [Price Plus Tax](financial/price_plus_tax.py)
   * [Simple Moving Average](financial/simple_moving_average.py)
+  * [Straight Line Depreciation](financial/straight_line_depreciation.py)
   * [Time And Half Pay](financial/time_and_half_pay.py)
 
 ## Fractals
@@ -1359,6 +1361,8 @@
   * [Word Occurrence](strings/word_occurrence.py)
   * [Word Patterns](strings/word_patterns.py)
   * [Z Function](strings/z_function.py)
+
+## [Test Try Except](/test_try_except.py)
 
 ## Web Programming
   * [Co2 Emission](web_programming/co2_emission.py)
