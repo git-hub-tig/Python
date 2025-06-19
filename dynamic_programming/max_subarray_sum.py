@@ -46,7 +46,9 @@ def max_subarray_sum(
     max_sum = 0 if allow_empty_subarrays else float("-inf") # wqs, the INT_MAX
     curr_sum = 0.0
     for num in arr:
-        curr_sum = max(0 if allow_empty_subarrays else num, curr_sum + num)
+        curr_sum = max(
+            0 if allow_empty_subarrays else num, curr_sum + num
+        )  # base vs current
         max_sum = max(max_sum, curr_sum)
 
     return max_sum
